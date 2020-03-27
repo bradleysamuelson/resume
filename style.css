@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+:root {
+  --primary: #5d4023;
+  --secondary: #636466;
+  --link: #41828f;
+  --hover: #2f5d66;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--primary);
+}
+h1 {
+  text-transform: lowercase;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1;
+}
+h1 span {
+  color: var(--secondary);
+  margin-left: -0.25rem;
+}
+h2 {
+  color: var(--secondary);
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+p {
+  margin-top: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--hover);
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header {
+  align-self: flex-start;
+  height: auto;
+  min-width: 340px;
+  margin-right: 1rem;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.info, .overview {
+  font-size: 0.85rem;
+}
+.info {
+  margin-bottom: 3rem;
+}
+
+main {
+  flex-grow: 2;
+  padding: 2rem 1rem;
+}
+.org-title {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    display: block;
+    padding: 0 2rem;
+  }
+  header {
+    position: relative;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .headers, .info {
+    width: 50%;
+  }
+  .overview {
+    font-size: 1rem;
+  }
+  main {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    display: block;
+  }
+  .headers, .info {
+    width: auto;
+  }
+  .info {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
