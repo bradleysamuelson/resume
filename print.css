@@ -1,0 +1,28 @@
+@import url(style.css);
+
+main {
+  font-size: 0.625rem;
+}
+
+header {
+  min-width: 180px;
+  width: 180px;
+}
+
+.info {
+  font-size: 0.625rem;
+}
+.overview {
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
