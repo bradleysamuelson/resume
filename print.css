@@ -2,6 +2,7 @@
 
 main {
   font-size: 0.625rem;
+  padding-bottom: 0;
 }
 
 header {
@@ -24,5 +25,5 @@ h2 {
 }
 
 section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
